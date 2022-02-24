@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        document.writeln(`Ola, <strong>${nome}</strong> seu nome tem ${nome.length} letras.<br/>`)//     <br/> quebra o print pra proxima linha
+        document.writeln(`Seu nome em maiusculas é <strong>${nome.toUpperCase()}</strong><br/>`)//<strong poe em negrito
+        var n1 = 1545.5
+        n1.toFixed(2).replace('.',',')
+        var n2 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})//valor brasil
+        document.write(`O valor total fica em <strong>${n2}</strong>`)
+        document.write(' Reais.<br/>')
+        var n3 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})//valor dollar
+        document.write(`O valor total fica em <strong>${n3}</strong>`)
+        document.write(' Dólares.<br/>')
+        var n4 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})//valor euro
+        document.write(`O valor total fica em <strong>${n4}</strong>`)
+        document.write(' Euros.<br/>')
+    </script>
+</body>
+</html>
